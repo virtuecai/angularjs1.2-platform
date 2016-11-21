@@ -1,0 +1,14 @@
+{
+  "name": "angularjs1.2-platform",
+  "version": "0.1.0",
+  "authors": [
+    "VirtueCai <virtuecai@163.com>"
+  ],
+
+  "dependencies": {
+    "angular": "~1.2.30",
+    "ui-router": "~0.2.15",
+    "ocLazyLoad": "~1.0.9",
+    "requirejs": "~2.1.18"
+  }
+}
