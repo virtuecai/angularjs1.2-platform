@@ -10,6 +10,5 @@
 1. 安装[nodejs](http://nodejs.org) -- 下载最新版本并安装
 2. 安装[bower](https://github.com/bower/bower) -- 命令行下执行: `npm install -g bower`  (不包含符号` ,下同)
 3. 安装Web类库 --  命令行到**example**目录,执行 `bower install`
-4. 浏览器打开 index.html 即可
-
-
+4. cd angularjs1.2-platform/api 目录, 执行命令: 'npm install' 然后 'node app.js' (启动api服务)
+5. 浏览器打开 index.html 即可
