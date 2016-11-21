@@ -12,6 +12,19 @@ define(['angular', 'angular-ui-router', 'ocLazyLoad'], function () {
 
             $urlRouterProvider.otherwise('/home');
 
+            // ...
+          /*  .state('admin', {
+                url: '/admin',
+                abstract: true,
+                defaultChild: 'admin.users',
+                templateUrl: 'templates/adminPanel.html'
+            })
+                .state('admin.users', {
+                    url: '',
+                    templateUrl: 'templates/adminUsers.html'
+                })*/
+            // ...
+
             $stateProvider
 
                 .state('home', {
@@ -26,9 +39,7 @@ define(['angular', 'angular-ui-router', 'ocLazyLoad'], function () {
                         load: function ($ocLazyLoad) {
 
                             return $ocLazyLoad.load({
-                                name: 'module1',
-                                files: ['module1/module.js', 'module1/controller1.js', 'module1/service1.js']
-
+                                files: ['module1/controller1.js', 'module1/service1.js']
                             });
                         }
                     }

@@ -9,8 +9,8 @@ require.config({
         "jquery": "bower_components/jquery/dist//jquery.min",
         "bootstrap": "bower_components/bootstrap/dist/js/bootstrap.min",
         "angular": "bower_components/angular/angular",
-        "ocLazyLoad": "bower_components/ocLazyLoad/dist/ocLazyLoad.require.min",
-        "angular-ui-router": "bower_components/ui-router/release/angular-ui-router.min"
+        "ocLazyLoad": "bower_components/ocLazyLoad/dist/ocLazyLoad.require",
+        "angular-ui-router": "bower_components/ui-router/release/angular-ui-router"
     },
     shim: {
         angular: {
@@ -26,8 +26,8 @@ require.config({
             deps: ['jquery']
         }
     },
-    deps: ['jquery'],
-    urlArgs: "bust=" + (new Date()).getTime()  //防止读取缓存，调试用
+    deps: ['jquery']
+    //,urlArgs: "bust=" + (new Date()).getTime()  //防止读取缓存，调试用
 });
 
 //手动启动ng

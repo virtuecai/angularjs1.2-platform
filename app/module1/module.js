@@ -1,1 +1,3 @@
-angular.module('module1',[]);
+define([], function () {
+    return angular.module('module1',[]);
+});

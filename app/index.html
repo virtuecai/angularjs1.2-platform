@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh_CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="VirtueCai">
+    <link rel="icon" href="styles/favicon.ico">
+
     <title>Home</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">-->
+
+    <!-- Custom styles for this template -->
+    <link href="styles/offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="lib/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+    <script src="lib/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-<div>
-    <a ui-sref="module1">Lazy Module1</a>
-</div>
+<!-- 头(菜单) -->
+<div ng-include="'common/template/head.tpl.html'"></div>
 
-<div>
-    <a ui-sref="module2">Lazy Module2</a>
-</div>
+<!-- 路由处理 -->
+<div ui-view class="container"></div>
+
+<!-- 尾 -->
+<div ng-include="'common/template/footer.tpl.html'"></div>
 
 
-<div ui-view></div>
-
+<!-- ui 模板需要 -->
+<script src="lib/ie10-viewport-bug-workaround.js"></script>
+<!-- require.js 加载 main.js  -->
 <script data-main="main" src="bower_components/requirejs/require.js"></script>
+
 </body>
 </html>
